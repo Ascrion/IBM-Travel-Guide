@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Aero Travel Guides</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="h-full">
+
+  <div id='header' class='bg-blue-800 h-[10vh] flex items-center justify-between p-4'>
+    <div></div>
+    <div class="text-white text-4xl">Aero Travel Guides</div>
+    <div class="flex items-center gap-x-4" id='navBar'>
+      <span class="text-5xl text-white hover:text-yellow-400 cursor-pointer translate-y-[-0.35rem]"
+        id="menu">☰</span>
+
+      <div id="dropdownMenu"
+        class="absolute top-[10vh] right-4 bg-white shadow-lg rounded-lg w-40 py-2 hidden z-10">
+        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-2xl">Home</a>
+        <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-2xl">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="content" class="bg-white h-[87vh] flex items-center justify-center px-6 relative w-full">
+
+    <img src = './media/beach-666122_1920.jpg' class="w-full h-full object-cover absolute top-0 left-0 z-0">
+    <div class="absolute max-w-3xl bg-black/10 backdrop-blur-sm rounded-lg shadow-lg shadow-black/30 px-8 py-10">
+      <h1 class="text-4xl lg:text-5xl font-bold text-center text-white mb-6">About Us</h1>
+
+      <p class="text-white text-lg leading-relaxed">
+        Our team is made up of passionate travelers, writers, photographers, and global citizens who live to explore and share what the world has to offer.
+      </p>
+    </div>
+  </div>
+
+  <div class="h-[3vh] w-full bg-blue-800 flex items-center justify-center">
+    <p class="text-sm text-white text-center">&copy; 2025 Aero Travel Guides</p>
+  </div>
+
+  <script src='index.js'></script>
+</body>
+
+</html>
