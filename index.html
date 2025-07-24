@@ -17,17 +17,20 @@
         <div class="w-[14%]"></div>
         <div class="text-white text-4xl">Aero Travel Guides</div>
         <div class="flex items-center gap-x-4" id='navBar'>
-            <button class="text-md text-white hover:text-yellow-400 cursor-pointer bg-white/30 rounded-lg p-2"
-                id='recommendations'>
-                Recommendations</button>
-            <span class="text-5xl text-white hover:text-yellow-400 cursor-pointer translate-y-[-0.35rem]"
-                id="menu">☰</span>
-
-            <div id="dropdownMenu"
-                class="absolute top-[10vh] right-4 bg-white shadow-lg rounded-lg w-40 py-2 hidden z-10">
-
-                <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-2xl">About Us</a>
-                <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-2xl">Contact Us</a>
+            <div class="search-box rounded-lg bg-white p-2">
+                <input type="text" id="recommendations" class="search-input text-blue-800"
+                    placeholder="Search by tag or title...">
+                    <button id="cancelSearch" class="text-sm bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 hidden">
+                    Cancel
+                </button>
+            </div>
+            <div>
+                <a href="about.html"
+                    class="text-md text-white hover:text-yellow-400 cursor-pointer bg-white/30 rounded-lg p-2">About
+                    Us</a>
+                <a href="contact.html"
+                    class="text-md text-white hover:text-yellow-400 cursor-pointer bg-white/30 rounded-lg p-2">Contact
+                    Us</a>
             </div>
         </div>
 
@@ -54,63 +57,10 @@
             </div>
         </div>
 
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[60%] h-[80vh] overflow-y-auto bg-black/20 backdrop-blur-lg px-6 py-8 rounded-lg shadow-lg shadow-black/50 text-white hidden"
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-[80%] h-[80vh]
+         overflow-y-auto bg-black/20 backdrop-blur-lg px-6 py-8 rounded-lg shadow-lg
+          shadow-black/50 text-white hidden flex flex-wrap justify-center gap-6"
             id='recommend'>
-
-            <h2 class="text-2xl lg:text-4xl font-bold mb-4 text-center">Beaches: Maldives & Lombok</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-
-                <div class="bg-white/10 p-4 rounded-lg shadow">
-                    <img src="./media/beach-666122_1920.jpg" alt="Maldives"
-                        class="w-full h-40 object-cover rounded mb-2">
-                    <h3 class="text-xl font-semibold">Maldives</h3>
-                    <p class="text-sm">Turquoise waters, overwater villas, and pure paradise under the sun.</p>
-                </div>
-
-                <div class="bg-white/10 p-4 rounded-lg shadow">
-                    <img src="./media/beach-4967176_1920.jpg" alt="Lombok"
-                        class="w-full h-40 object-cover rounded mb-2">
-                    <h3 class="text-xl font-semibold">Lombok, Indonesia</h3>
-                    <p class="text-sm">A hidden gem with serene beaches, perfect for a peaceful escape.</p>
-                </div>
-            </div>
-
-
-            <h2 class="text-2xl lg:text-4xl font-bold mb-4 text-center">Temples: Angkor Thom & Sea Shore Temple</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-
-                <div class="bg-white/10 p-4 rounded-lg shadow">
-                    <img src="./media/angkor-thom.jpg" alt="Angkor Thom" class="w-full h-40 object-cover rounded mb-2">
-                    <h3 class="text-xl font-semibold">Angkor Thom, Cambodia</h3>
-                    <p class="text-sm">Explore the mystical stone faces deep in Cambodia’s ancient jungle city.</p>
-                </div>
-
-                <div class="bg-white/10 p-4 rounded-lg shadow">
-                    <img src="./media/sea-shore-temple.jpg" alt="Sea Shore Temple"
-                        class="w-full h-40 object-cover rounded mb-2">
-                    <h3 class="text-xl font-semibold">Sea Shore Temple, India</h3>
-                    <p class="text-sm">A historic stone marvel sitting quietly on the coast of Mahabalipuram.</p>
-                </div>
-            </div>
-
-
-            <h2 class="text-2xl lg:text-4xl font-bold mb-4 text-center">Country: USA</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div class="bg-white/10 p-4 rounded-lg shadow">
-                    <img src="./media/new-york.jpg" alt="New York" class="w-full h-40 object-cover rounded mb-2">
-                    <h3 class="text-xl font-semibold">New York City</h3>
-                    <p class="text-sm">Bright lights, endless energy, and a skyline that never gets old.</p>
-                </div>
-
-                <div class="bg-white/10 p-4 rounded-lg shadow">
-                    <img src="./media/grand-canyon.jpg" alt="Grand Canyon"
-                        class="w-full h-40 object-cover rounded mb-2">
-                    <h3 class="text-xl font-semibold">Grand Canyon</h3>
-                    <p class="text-sm">A breathtaking natural wonder that leaves you speechless at every turn.</p>
-                </div>
-            </div>
-
         </div>
 
     </div>
